@@ -1,0 +1,62 @@
+﻿<Window x:Class="GameRockPaperScissors.PlayWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameRockPaperScissors"
+        mc:Ignorable="d"
+        Title="Chơi game" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        >
+    <Grid>
+        <Label Content="Thống kê" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="13" FontStyle="Italic" Foreground="IndianRed" FontWeight="Bold"/>
+        <Label Content="Bạn thắng:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,24,0,0"/>
+        <Label x:Name="playerWin" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="75,24,0,0" Foreground="DarkBlue"/>
+        <Label Content="Máy thắng:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,48,0,0"/>
+        <Label x:Name="machineWin" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="75,48,0,0" Foreground="DarkRed"/>
+        <Label Content="Hoà:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,72,0,0"/>
+        <Label x:Name="playerDraw" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="75,72,0,0" Foreground="DarkGreen"/>
+        <Label x:Name="statuslabel" Visibility="Hidden" Content="Thắng" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="70,150,0,0" FontSize="42" Foreground="Red"/>
+        <Label Content="Bạn ra:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,70,0,0" FontSize="20"/>
+        <Label Content="Máy ra:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="600,70,0,0" FontSize="20"/>
+        <Label Content="Chế độ:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,96,0,0"/>
+        <Label x:Name="modeSelected" Content="Bình thường" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="75,96,0,0" Foreground="DarkRed"/>
+        <Button x:Name="RockBtn" Background="White" 
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="200,320,0,0"
+                Height="54"
+                Width="75"
+                BorderThickness="0" 
+                Click="rockChoosed"
+                >
+            <Image Source="Img/bua.png" RenderOptions.BitmapScalingMode="HighQuality"></Image>
+        </Button>
+        <Button x:Name="PaperBtn" Background="White" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" 
+                Margin="400,320,0,0"
+                Height="54"
+                Width="75"
+                BorderThickness="0" 
+                Click="paperChoosed"
+                >
+            <Image Source="Img/bao.png" RenderOptions.BitmapScalingMode="HighQuality"></Image>
+        </Button>
+        <Button x:Name="ScissorsBtn" Background="White" 
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="600,320,0,0"
+                Height="54"
+                Width="75"
+                BorderThickness="0"
+                Click="scissorsChoosed"
+                >
+            <Image Source="Img/keo.png" RenderOptions.BitmapScalingMode="HighQuality"></Image>
+        </Button>
+        <Button Click="Exit" Content="Thoát" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20,0,0,200" Height="40" Width="70"/>
+        <Image x:Name="playerResult" HorizontalAlignment="Left" Height="155" Margin="160,130,0,0" VerticalAlignment="Top" Width="143"/>
+        <Image x:Name="machineResult" HorizontalAlignment="Left" Height="155" Margin="576,130,0,0" VerticalAlignment="Top" Width="143"/>
+    </Grid>
+</Window>

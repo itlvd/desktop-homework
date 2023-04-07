@@ -1,0 +1,87 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>eng.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="img\bed.jpg" />
+    <None Remove="img\bicycle.jpg" />
+    <None Remove="img\blank.jpg" />
+    <None Remove="img\blank.png" />
+    <None Remove="img\boarding card.jpg" />
+    <None Remove="img\book.jpg" />
+    <None Remove="img\car.jpg" />
+    <None Remove="img\chair.jpg" />
+    <None Remove="img\clock.jpg" />
+    <None Remove="img\computer.jpg" />
+    <None Remove="img\cup.jpg" />
+    <None Remove="img\door.jpg" />
+    <None Remove="img\food.jpg" />
+    <None Remove="img\fork.jpg" />
+    <None Remove="img\hat.jpg" />
+    <None Remove="img\house.jpg" />
+    <None Remove="img\jacket.jpg" />
+    <None Remove="img\knife.jpg" />
+    <None Remove="img\lamp.jpg" />
+    <None Remove="img\main.jpg" />
+    <None Remove="img\mirror.jpg" />
+    <None Remove="img\money.jpg" />
+    <None Remove="img\music.jpg" />
+    <None Remove="img\paper.jpg" />
+    <None Remove="img\pen.jpg" />
+    <None Remove="img\phone.jpg" />
+    <None Remove="img\picture.jpg" />
+    <None Remove="img\plate.jpg" />
+    <None Remove="img\shoes.jpg" />
+    <None Remove="img\spoon.jpg" />
+    <None Remove="img\table.jpg" />
+    <None Remove="img\television.jpg" />
+    <None Remove="img\water.jpg" />
+    <None Remove="img\window.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="eng.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\bed.jpg" />
+    <Resource Include="img\bicycle.jpg" />
+    <Resource Include="img\blank.jpg" />
+    <Resource Include="img\book.jpg" />
+    <Resource Include="img\car.jpg" />
+    <Resource Include="img\chair.jpg" />
+    <Resource Include="img\clock.jpg" />
+    <Resource Include="img\computer.jpg" />
+    <Resource Include="img\cup.jpg" />
+    <Resource Include="img\door.jpg" />
+    <Resource Include="img\food.jpg" />
+    <Resource Include="img\fork.jpg" />
+    <Resource Include="img\hat.jpg" />
+    <Resource Include="img\house.jpg" />
+    <Resource Include="img\jacket.jpg" />
+    <Resource Include="img\knife.jpg" />
+    <Resource Include="img\lamp.jpg" />
+    <Resource Include="img\main.jpg" />
+    <Resource Include="img\mirror.jpg" />
+    <Resource Include="img\money.jpg" />
+    <Resource Include="img\music.jpg" />
+    <Resource Include="img\paper.jpg" />
+    <Resource Include="img\pen.jpg" />
+    <Resource Include="img\phone.jpg" />
+    <Resource Include="img\picture.jpg" />
+    <Resource Include="img\plate.jpg" />
+    <Resource Include="img\shoes.jpg" />
+    <Resource Include="img\spoon.jpg" />
+    <Resource Include="img\table.jpg" />
+    <Resource Include="img\television.jpg" />
+    <Resource Include="img\water.jpg" />
+    <Resource Include="img\window.jpg" />
+  </ItemGroup>
+
+</Project>

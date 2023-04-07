@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Img\bao.png" />
+    <None Remove="Img\bua.png" />
+    <None Remove="Img\keo.png" />
+    <None Remove="Img\main.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Img\bao.png" />
+    <Resource Include="Img\bua.png" />
+    <Resource Include="Img\keo.png" />
+    <Resource Include="Img\main.jpg" />
+  </ItemGroup>
+
+</Project>

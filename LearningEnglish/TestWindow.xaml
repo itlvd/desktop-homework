@@ -1,0 +1,23 @@
+﻿<Window x:Class="LearningEnglish.TestWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LearningEnglish"
+        mc:Ignorable="d"
+        Title="TestWindow" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        >
+    <Grid>
+        <Button Click="Exit" Content="Thoát" HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="75" Margin="10,10,0,0"/>
+        <Image x:Name="imgLearn" Visibility="Hidden" Source="img/blank.png" Width="400" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-200,0,0"></Image>
+        <Button Click="Next" x:Name="btnPlay" Content="Bắt đầu" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,100,0,0" Height="45" Width="75" />
+        <Label x:Name="lbShowStatus" Content="Bạn đã sẵn sàng chưa?" Visibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="43" Foreground="MediumVioletRed" Margin="0,-100,0,0"></Label>
+
+        <Button x:Name="btnAnswer0" Click="Answer0" Content="Đáp án 1" Visibility="Hidden" HorizontalAlignment="Center" VerticalAlignment="Center" Height="45" Width="75" Margin="-400,300,0,0"/>
+        <Button x:Name="btnAnswer1" Click="Answer1" Content="Đáp án 2" Visibility="Hidden" HorizontalAlignment="Center" VerticalAlignment="Center" Height="45" Width="75" Margin="0,300,0,0"/>
+        <Button x:Name="btnAnswer2" Click="Answer2" Content="Đáp án 3" Visibility="Hidden" HorizontalAlignment="Center" VerticalAlignment="Center" Height="45" Width="75" Margin="400,300,0,0"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="LearningEnglish.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LearningEnglish"
+        mc:Ignorable="d"
+        Title="Học Từ Vựng Tiếng Anh Siêu Cấp" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Học Từ Vựng Tiếng Anh Siêu Cấp" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-300,0,0" FontSize="32" FontStyle="Italic" Foreground="IndianRed" FontWeight="Bold"></Label>
+        <Button Click="LearnNow" Content="Học thôi" x:Name="btnLearn" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-200,120,0,0" Height="45" Width="75"/>
+        <Button Click="TestNow" Content="Kiểm tra" x:Name="btnCheck" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="200,120,0,0" Height="45" Width="75"/>
+        <Image Source="img/main.jpg" Height="160" Margin="0,-100,0,0"/>
+    </Grid>
+</Window>
